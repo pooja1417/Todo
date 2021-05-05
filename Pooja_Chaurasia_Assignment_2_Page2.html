@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Todo List</title>
+    <style>
+      body { font-size: 32px; font-family: "Roboto", sans-serif; }
+      .main-container { position: relative; margin:20px 400px;}
+      .task-container { display: flex; justify-content:space-around; align-items:center;flex-wrap: wrap;}
+      .back-btn { display: flex; justify-content: space-evenly; align-items:center; margin-top:-40px}
+      .back { color:#6b6868}
+      .box { display: flex; justify-content: space-evenly; align-items:center; }
+      .grid-card { position:relative;text-align:center;height: 350px; width: 230px; border: 1px solid #e74c3c;border-radius: 10px;box-shadow: 10px 10px 10px #4e4c4c29;margin: 10px}
+      .box-heading { text-align:center;margin-bottom:0px;color: #e74c3c; font-size: 0.7em; font-family:"Segoe UI", Tahoma, Geneva, Verdana, sans-serif;position: relative}
+      .task-label { font-size: 0.6em; color:#3a3838;}
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="task-container">
+        <div><hr style="width:200px;height:1px;border-width:1;color:#d9dbda;background-color:#d9dbda;"></div><div><h3>Trip To Paris</h3></div><div><hr style="width: 200px;height:1px;border-width:1;color:#d9dbda;background-color:#d9dbda;"></div>
+      </div>
+      <div class="back-btn">
+        <p><i class="fas fa-arrow-circle-left" style="color:#e6656b"></i>  <span class="back">Back</span></p>
+      </div>
+      <div class="box">
+        <div class="grid-card">
+          <p class="box-heading">Trip to Paris</p>
+          <hr style="height:1px;border-width:1;color:#d9dbda;background-color:#d9dbda;margin-left:25px">
+          <p style="color: red;font-size: 0.7em;text-align: center;margin-right:10px"><strike>Completed Task</strike></p>
+          <label for="Task1" class="task-label">
+            <input type="checkbox" name="Task1" value="Task1" style="width:20px;height:20px; vertical-align:middle;"/>   Pending Task</label>
+          <p><i class="fas fa-plus-circle" style="color:#e6656b;position:absolute;top:290px;left:180px"></i></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
